@@ -1,0 +1,11 @@
+# 5.1 Surround side (Home Theater) configuration
+# Remaps 7.1 rear channels to side for proper 5.1 content playback
+# By 3DJ
+# Recommended by satsun
+
+If: inputChannelCount == 8
+Copy: SL=SL+RL
+Copy: SR=SR+RR
+Copy: RL=0
+Copy: RR=0
+EndIf:
